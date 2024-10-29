@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Frenadol.view.ChatController">
+    <children>
+        <VBox fx:id="VboxChat" alignment="CENTER" spacing="10.0" styleClass="Chat" stylesheets="@../../../Background.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ListView fx:id="messageList" prefHeight="200.0" prefWidth="480.0" styleClass="List" stylesheets="@../../../Background.css" />
+                <TextField fx:id="messageField" prefHeight="25.0" prefWidth="379.0" />
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button fx:id="sendButton" onAction="#sendMessage" text="Enviar" />
+                        <Button mnemonicParsing="false" onMouseClicked="#exportConversationToTXT" prefHeight="26.0" prefWidth="68.0" text="Exportar" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<messages>
+        
+    <message>
+                
+        <sender>patata</sender>
+                
+        <receiver>patata2</receiver>
+                
+        <content>hola</content>
+                
+        <timestamp>2024-10-29T21:59:00.237956700</timestamp>
+            
+    </message>
+    
+    <message>
+        <sender>juanma</sender>
+        <receiver>patata</receiver>
+        <content>hola</content>
+        <timestamp>2024-10-29T22:14:35.850547</timestamp>
+    </message>
+</messages>
