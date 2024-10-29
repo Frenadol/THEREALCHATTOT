@@ -1,0 +1,33 @@
+.Primary{
+    -fx-background-color: #b8e0d2;
+
+
+}
+.InicieSession{
+    -fx-background-color: #daeaf6;
+
+
+}
+.RegisterUser{
+    -fx-background-color: #daeaf6;
+
+
+}
+. MainMenu{
+    -fx-background-color: #d6eadf;
+
+
+}
+.Chat{
+    -fx-background-color: #b3dee2;
+
+
+}
+.List {
+    -fx-background-color: #f2f5ff;
+}
+.Splash{
+    -fx-background-color: #a0ced9;
+
+
+}

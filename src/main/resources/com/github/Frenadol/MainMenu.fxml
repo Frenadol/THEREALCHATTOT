@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="808.0" styleClass="MainMenu" stylesheets="@../../../Background.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.Frenadol.view.MainMenuController">
+    <children>
+        <Text layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios disponibles:" wrappingWidth="243.33333333333331" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-2.0" />
+        <TableView fx:id="usersTable" editable="true" layoutY="15.0" prefHeight="264.0" prefWidth="243.0" AnchorPane.bottomAnchor="293.66666666666663" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="15.0">
+            <columns>
+                <TableColumn fx:id="nameUserColumn" prefWidth="122.66668701171875" text="Usuarios disponibles:" />
+                <TableColumn fx:id="imageProfileColumn" prefWidth="133.33331298828125" text="Imagen de perfil:" />
+            </columns>
+        </TableView>
+        <Label fx:id="NameUser" layoutX="407.0" layoutY="1.0" prefHeight="30.0" prefWidth="280.0" text="Texto" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="1.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <TableView fx:id="contactsTable" layoutY="291.0" prefHeight="283.0" prefWidth="243.0" AnchorPane.bottomAnchor="-1.3333333333333144" AnchorPane.leftAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="contactNameColumn" prefWidth="121.99999237060547" text="Usuarios agregados:" />
+                <TableColumn fx:id="contactProfileColumn" prefWidth="122.00001525878906" text="Imagen de perfil:" />
+            </columns>
+        </TableView>
+        <Text layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios agregados:" wrappingWidth="243.33333333333331" AnchorPane.bottomAnchor="278.0" AnchorPane.leftAnchor="0.0" />
+        <Text layoutX="284.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido a Chattot" wrappingWidth="110.90625" AnchorPane.rightAnchor="413.09375" AnchorPane.topAnchor="7.0" />
+        <ImageView fx:id="userImage" fitHeight="93.0" fitWidth="109.0" layoutX="713.0" layoutY="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0" />
+        <HBox layoutX="243.0" layoutY="532.0" prefHeight="41.0" prefWidth="565.0" AnchorPane.bottomAnchor="-0.3333333333333357" AnchorPane.leftAnchor="243.33333333333326" AnchorPane.rightAnchor="-0.33333333333337123">
+            <children>
+                <Button fx:id="addContactButton" mnemonicParsing="false" onMouseClicked="#confirmAndAddContact" text="Agregar contacto" />
+                <Button fx:id="sendMessageButton" mnemonicParsing="false" onMouseClicked="#chattedWithContact" prefHeight="25.0" prefWidth="229.0" text="Chatear" />
+                <Button fx:id="BackButton" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="39.0" prefWidth="72.0" text="Atras" />
+            </children>
+        </HBox>
+        <Pane fx:id="Panel" layoutX="244.0" layoutY="100.0" prefHeight="430.0" prefWidth="565.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="244.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="100.0" />
+    </children>
+</AnchorPane>
